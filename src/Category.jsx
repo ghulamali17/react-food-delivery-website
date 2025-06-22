@@ -8,7 +8,7 @@ import { GiHamburger } from "react-icons/gi";
 const Categories = [
   {
     id: 1,
-    name: "ALL",
+    name: "All",
     Image: <TiThSmallOutline className="w-[60px] h-[60px] text-green-600" />,
   },
   {
@@ -20,12 +20,12 @@ const Categories = [
   },
   {
     id: 3,
-    name: "Soup",
+    name: "soups",
     Image: <TbSoup className="w-[60px] h-[60px] text-green-600" />,
   },
   {
     id: 4,
-    name: "Pasta",
+    name: "pasta",
     Image: <CiBowlNoodles className="w-[60px] h-[60px] text-green-600" />,
   },
   {
@@ -35,7 +35,7 @@ const Categories = [
   },
   {
     id: 6,
-    name: "Pizza",
+    name: "pizza",
     Image: <GiFullPizza className="w-[60px] h-[60px] text-green-600" />,
   },
   {
