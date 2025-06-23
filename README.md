@@ -99,6 +99,3 @@ Built with ❤️ by [ghulamali17].
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
