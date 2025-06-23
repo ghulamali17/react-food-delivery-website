@@ -34,24 +34,21 @@
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/ghu/react-food-delivery-website
+   git clone https://github.com/ghulamali17/react-food-delivery-website
    cd react-food-delivery-website
-````
+   ```
 
 2. **Install dependencies:**
-
    ```bash
    npm install
    ```
 
 3. **Start the development server:**
-
    ```bash
    npm run dev
    ```
 
 4. Open in browser:
-
    ```
    http://localhost:5173
    ```
@@ -82,30 +79,26 @@ react-food-delivery-website/
 
 ## ✅ To Do
 
-* [ ] Backend Integration (e.g. Firebase, Node.js)
-* [ ] User Authentication
-* [ ] Order History Page
-* [ ] Payment Gateway Integration
+- [ ] Backend Integration (e.g. Firebase, Node.js)
+- [ ] User Authentication
+- [ ] Order History Page
+- [ ] Payment Gateway Integration
 
 ---
 
 ## 🔗 Live Demo
 
-> Deployed on Netlify:
+> Deployed on Netlify:  
 > 👉 [https://foodzilla-web.netlify.app](https://foodzilla-web.netlify.app)
 
 ---
 
 ## 🙌 Credits
 
-Built with ❤️ by \[ghulamali17].
+Built with ❤️ by [ghulamali17].
 
 ---
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
-```
-
-
