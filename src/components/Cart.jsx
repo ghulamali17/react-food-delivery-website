@@ -7,15 +7,14 @@ import { useSelector } from "react-redux";
 function Cart() {
   const { showCart, setShowCart } = useContext(dataContext);
   const items = useSelector((state) => state.cart);
-  let subTotal = items.reduce((total, item) => total + item.price, 0);
-  console.log(subTotal);
-  let deliveryFee = 20;
-  let taxes = (subTotal * 0.5) / 100;
-  let total = Math.floor(subTotal + deliveryFee + taxes);
+let subTotal = items.reduce((total, item) => total + item.price * item.qty, 0);
+let deliveryFee = 20;
+let taxes = (subTotal * 0.5) / 100;
+let total = Math.floor(subTotal + deliveryFee + taxes);
 
   return (
     <div
-      className={`w-full overflow-scroll md:w-[40vw] h-[100vh] p-6 fixed top-0 right-0 bg-white shadow-xl transform transition-transform flex flex-col items-center  duration-500 z-50 ${
+      className={`w-full overflow-scroll md:w-[40vw] h-[100vh] p-6 fixed top-0 right-0 bg-white shadow-xl transform transition-transform  duration-500 z-50 ${
         showCart ? "translate-x-0" : "translate-x-full"
       }`}
     >
@@ -75,9 +74,11 @@ function Cart() {
           RS {total}/-
         </span>
       </div>
-      <button className="w-[80%] p-3 rounded-lg bg-green-500 text-white hover:bg-green-300 cursor-pointer font-semibold transition-all">
+      <div className="flex w-full justify-center items-center">
+        <button className="w-[80%] p-3 rounded-lg mt-5 bg-green-500 text-white hover:bg-green-300 cursor-pointer font-semibold transition-all">
         Place Order
       </button>
+      </div>
     </div>
   );
 }

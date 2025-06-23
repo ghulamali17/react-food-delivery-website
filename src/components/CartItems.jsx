@@ -1,12 +1,12 @@
+// CartItems.jsx
 import React from "react";
-import image1 from "../assets/image1.avif";
 import { MdDelete } from "react-icons/md";
-import { useDispatch, useSelector } from "react-redux";
-import { RemoveItems } from "../Redux/cartSlice";
+import { useDispatch } from "react-redux";
+import { RemoveItems, incrementQty, decrementQty } from "../Redux/cartSlice";
 
 function CartItems({ name, id, price, image, qty }) {
-  let items = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+
   return (
     <div className="outer w-full h-[120px] bg-white p-4 flex rounded-lg shadow-md items-center gap-4">
       {/* Left Section */}
@@ -22,7 +22,10 @@ function CartItems({ name, id, price, image, qty }) {
 
           {/* Quantity Controls */}
           <div className="flex items-center mt-2">
-            <button className="px-3 py-1 bg-red-400 text-white rounded-l hover:bg-red-500 transition">
+            <button
+              className="px-3 py-1 bg-red-400 text-white rounded-l hover:bg-red-500 transition"
+              onClick={() => dispatch(decrementQty(id))}
+            >
               −
             </button>
             <input
@@ -31,7 +34,10 @@ function CartItems({ name, id, price, image, qty }) {
               value={qty}
               readOnly
             />
-            <button className="px-3 py-1 bg-green-500 text-white rounded-r hover:bg-green-600 transition">
+            <button
+              className="px-3 py-1 bg-green-500 text-white rounded-r hover:bg-green-600 transition"
+              onClick={() => dispatch(incrementQty(id))} 
+            >
               +
             </button>
           </div>
@@ -40,15 +46,14 @@ function CartItems({ name, id, price, image, qty }) {
 
       {/* Right Section */}
       <div className="w-[40%] h-full flex items-center justify-end pr-4 gap-4">
-        {/* Price */}
-        <span className="text-xl font-semibold text-gray-700">{price}</span>
-
-        {/* Delete Button */}
-        <button className="text-red-500 hover:text-red-700 transition">
-          <MdDelete
-            onClick={() => dispatch(RemoveItems(id))}
-            className="w-6 h-6"
-          />
+        <span className="text-xl font-semibold text-gray-700">
+          RS {price * qty}/-
+        </span>
+        <button
+          className="text-red-500 hover:text-red-700 transition"
+          onClick={() => dispatch(RemoveItems(id))} 
+        >
+          <MdDelete className="w-6 h-6" />
         </button>
       </div>
     </div>
