@@ -1,4 +1,3 @@
-````markdown
 # 🍔 Foodzilla Web
 
 **Foodzilla Web** is a modern and responsive food ordering application built using **React**, **Redux**, and **Tailwind CSS**. It allows users to browse food items, filter by categories, search, and manage a shopping cart with real-time feedback and dynamic pricing.
