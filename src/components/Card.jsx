@@ -1,9 +1,12 @@
 import { LuLeafyGreen } from "react-icons/lu";
 import { GiChickenOven } from "react-icons/gi";
+import { useDispatch } from "react-redux";
+import { AddItems } from "../Redux/cartSlice";
 
 function Card({ name, id, image, price, type }) {
+  let dispatch = useDispatch();
   return (
-    <div className="w-[300px] h-[360px] bg-white p-3 flex flex-col shadow-lg gap-3 hover:border-2 border-green-300 ">
+    <div className="w-[300px] h-[360px] rounded-xl bg-white p-3 flex flex-col shadow-lg gap-3 hover:border-2 border-green-300 ">
       <div className="img w-full h-1/2 overflow-hidden">
         <img
           src={image}
@@ -33,7 +36,14 @@ function Card({ name, id, image, price, type }) {
         </div>
       </div>
 
-      <button className="w-full p-3 bg-green-300 text-white hover:bg-green-500 cursor-pointer font-semibold transition-all ">
+      <button
+        onClick={() => {
+          dispatch(
+            AddItems({ id: id, name: name, price: price, image: image, qty: 1 })
+          );
+        }}
+        className="w-full rounded-lg p-3 bg-green-500 text-white hover:bg-green-300 cursor-pointer font-semibold transition-all "
+      >
         Add to dish
       </button>
     </div>
