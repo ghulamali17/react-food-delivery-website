@@ -1,12 +1,105 @@
-# React + Vite
+# 🍔 Foodzilla Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Foodzilla Web** is a modern and responsive food ordering application built using **React**, **Redux**, and **Tailwind CSS**. It allows users to browse food items, filter by categories, search, and manage a shopping cart with real-time feedback and dynamic pricing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 **Search Food Items**
+- 🧾 **Category-Based Filtering**
+- 🛒 **Add/Remove from Cart**
+- ➕ ➖ **Quantity Management**
+- 💸 **Dynamic Pricing (Subtotal, Taxes, Delivery Fee, Total)**
+- 📦 **Place Order (UI Only)**
+- 🔔 **Toast Notifications for Cart Actions**
+- 💻 **Responsive Design** (Mobile + Desktop)
+- 🧠 **Global State Management with Redux**
+- 🌿 **Context API for UI State Handling**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React** (Vite)
+- **Redux Toolkit**
+- **React Context API**
+- **Tailwind CSS**
+- **React Icons**
+- **React Toastify**
+
+---
+
+## 📦 Installation
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/ghulamali17/react-food-delivery-website
+   cd react-food-delivery-website
+````
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open in browser:
+
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 📁 Folder Structure
+
+```
+react-food-delivery-website/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── Redux/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── package.json
+├── README.md
+└── vite.config.js
+```
+
+---
+
+## ✅ To Do
+
+* [ ] Backend Integration (e.g. Firebase or Node.js)
+* [ ] User Authentication
+* [ ] Order History
+* [ ] Payment Gateway Integration
+
+---
+
+## 🔗 Live Demo
+
+> Deploy on Netlify:
+> 👉 [https://foodzilla-web.netlify.app](https://foodzilla-web.netlify.app)
+
+---
+
+---
+
+
+---
+
+
+---
