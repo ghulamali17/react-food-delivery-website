@@ -1,3 +1,4 @@
+````markdown
 # 🍔 Foodzilla Web
 
 **Foodzilla Web** is a modern and responsive food ordering application built using **React**, **Redux**, and **Tailwind CSS**. It allows users to browse food items, filter by categories, search, and manage a shopping cart with real-time feedback and dynamic pricing.
@@ -10,9 +11,9 @@
 - 🧾 **Category-Based Filtering**
 - 🛒 **Add/Remove from Cart**
 - ➕ ➖ **Quantity Management**
-- 💸 **Dynamic Pricing (Subtotal, Taxes, Delivery Fee, Total)**
-- 📦 **Place Order (UI Only)**
-- 🔔 **Toast Notifications for Cart Actions**
+- 💸 **Dynamic Pricing** (Subtotal, Taxes, Delivery Fee, Total)
+- 📦 **Place Order** *(UI only)*
+- 🔔 **Toast Notifications** for Cart Actions
 - 💻 **Responsive Design** (Mobile + Desktop)
 - 🧠 **Global State Management with Redux**
 - 🌿 **Context API for UI State Handling**
@@ -21,7 +22,7 @@
 
 ## 🛠️ Tech Stack
 
-- **React** (Vite)
+- **React (Vite)**
 - **Redux Toolkit**
 - **React Context API**
 - **Tailwind CSS**
@@ -34,7 +35,7 @@
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/ghulamali17/react-food-delivery-website
+   git clone https://github.com/ghu/react-food-delivery-website
    cd react-food-delivery-website
 ````
 
@@ -82,24 +83,30 @@ react-food-delivery-website/
 
 ## ✅ To Do
 
-* [ ] Backend Integration (e.g. Firebase or Node.js)
+* [ ] Backend Integration (e.g. Firebase, Node.js)
 * [ ] User Authentication
-* [ ] Order History
+* [ ] Order History Page
 * [ ] Payment Gateway Integration
 
 ---
 
 ## 🔗 Live Demo
 
-> Deploy on Netlify:
+> Deployed on Netlify:
 > 👉 [https://foodzilla-web.netlify.app](https://foodzilla-web.netlify.app)
 
 ---
 
----
+## 🙌 Credits
 
-
----
-
+Built with ❤️ by \[ghulamali17].
 
 ---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+```
+
+
